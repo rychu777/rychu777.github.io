@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Piotr Ryszko</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__content container">
+            <a href="#home  " class="nav__logo">PR</a>
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home__overlay"></div>
+        <div class="home__content container">
+            <h1 class="home__title">Machine Learining Engineer</h1>
+            <p class="home__subtitle">Turning data into intelligence, one model at a time.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Organizations Section -->
+    <section id="organizations" class="organizations section">
+        <div class="container">
+            <h2 class="section__title">Organizations I Belong To</h2>
+            <div class="organizations__grid">
+                <a href="https://solvro.pwr.edu.pl/pl/" class="organization__card">
+                    <img src="img/org1.png" alt="SOLVRO">
+                    <div class="organization__info">
+                        <h3>SOLVRO</h3>
+                        <p>Scientific circle focused on AI and Machine Learning research.</p>
+                    </div>
+                </a>
+    
+                <a href="https://pwr.edu.pl/" class="organization__card">
+                    <img src="img/org2.png" alt="Wrocław University of Science and Technology">
+                    <div class="organization__info">
+                        <h3>Wrocław University of Science and Technology</h3>
+                        <p>My university, where I'm currently pursuing my bachelor's degree in CS.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <img src="img/me.jpg" alt="Piotr Ryszko" class="about__img">
+                <div class="about__text justified_text">
+                    <p>I am a passionate Data Scientist and Machine Learning Engineer with experience in developing advanced AI models and data-driven solutions. As an ML Engineer at the SOLVRO scientific circle, I work on cutting-edge machine learning projects, with one of my key achievements being the 15 Min Gamba project. I specialize in data analysis, model optimization, and AI-driven solutions, always focusing on practical applications and efficiency.</p>
+                    <div class="about__skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">CUDA</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">R</span>
+                        <span class="skill">Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__grid">
+                <a href="https://github.com/Solvro/ml-promochator" class="project__card" target="_blank" rel="noopener noreferrer">
+                    <img src="img/project4.png" alt="Promochator" class="project__img">
+                    <div class="project__info justified_text">
+                        <h3>Promochator</h3>
+                        <p>A recommendation system based on large language models that helps match students with suitable thesis supervisors.</p>
+                    </div>
+                </a>
+    
+                <a href="https://github.com/rychu777/15-min-gamba" class="project__card" target="_blank" rel="noopener noreferrer">
+                    <img src="img/project1.png" alt="15 Min Gamba" class="project__img">
+                    <div class="project__info justified_text">
+                        <h3>15 Min Gamba</h3>
+                        <p>The goal of the project is to effectively predict the outcome of a League of Legends game based on the state of the game at the 15 minutes mark.</p>
+                    </div>
+                </a>
+    
+                <a href="https://github.com/rychu777/neural-network-trainer" class="project__card" target="_blank" rel="noopener noreferrer">
+                    <img src="img/project2.png" alt="Neural Network Trainer" class="project__img">
+                    <div class="project__info justified_text">
+                        <h3>Neural Network Trainer</h3>
+                        <p>Neural network training tool prepared for my 15-min-gamba project.</p>
+                    </div>
+                </a>
+    
+                <a href="https://github.com/rychu777/trajectory-analysis" class="project__card" target="_blank" rel="noopener noreferrer">
+                    <img src="img/project3.png" alt="Trajectory Analysis" class="project__img">
+                    <div class="project__info justified_text">
+                        <h3>Trajectory Analysis</h3>
+                        <p>The goal of the task is to learn an ML or DNN model that is responsible for multi-class classification of different types of diffusion based on particle 2D trajectories.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <form class="contact__form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social__links">
+                <a href="https://github.com/rychu777"><i class="fab fa-github"></i></a>
+                <a href="https://pl.linkedin.com/in/piotr-ryszko-2b2229263"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100075436676501"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2025 Piotr Ryszko. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

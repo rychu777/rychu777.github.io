@@ -1,0 +1,65 @@
+@use "sass:color";
+@use 'base/variables';
+@use 'base/mixins' as *;
+@use 'layouts/nav';
+@use 'pages/home';
+@use 'pages/about';
+@use 'components/cards';
+//@use 'copomnents/projects';
+//@use 'components/organizations';
+@use 'pages/contact';
+@use 'layouts/footer';
+@use 'base/utilities';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+    @include respond(tablet) {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: variables.$dark-color;
+}
+
+.container {
+    max-width: variables.$container-width;
+    margin: 0 auto;
+    padding: 0 0rem; // 0 2rem previously
+}
+
+.section {
+    padding: variables.$section-padding;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: variables.$primary-color;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+
+    &:hover {
+        background: color.adjust(variables.$primary-color, $lightness: -10%);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}

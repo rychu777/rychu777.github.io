@@ -1,0 +1,44 @@
+@use '../base/mixins' as *;
+@use '../base/variables';
+.about {
+    &__content {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 3rem;
+        align-items: center;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    &__text {
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+.skill {
+    background: rgba(variables.$primary-color, 0.1);
+    color: variables.$primary-color;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+

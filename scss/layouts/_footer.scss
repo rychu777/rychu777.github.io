@@ -1,0 +1,29 @@
+@use '../base/variables';
+@use '../base/mixins' as *;
+.footer {
+    background: variables.$dark-color;
+    color: white;
+    padding: 2*variables.$basic-footer-padding 0 variables.$basic-footer-padding;
+    text-align: center;
+
+    .social__links {
+        @include flex-center();
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+
+            &:hover {
+                color: variables.$primary-color;
+            }
+        }
+    }
+
+    p {
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+}

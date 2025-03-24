@@ -1,0 +1,32 @@
+@use '../base/variables';
+.contact {
+    &__form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1.5rem;
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #eee;
+            border-radius: 5px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+
+            &:focus {
+                outline: none;
+                border-color: variables.$primary-color;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            justify-self: start;
+        }
+    }
+}

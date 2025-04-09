@@ -286,8 +286,6 @@ body {
 .btn:active {
   transform: translateY(0);
 }
-
-/*# sourceMappingURL=style.css.map */
 .leetcode__progress {
   margin-top: 2rem;
   padding: 1rem;
@@ -307,3 +305,4 @@ body {
   height: 10px;
   background-color: #2ecc71;
 }
+/*# sourceMappingURL=style.css.map */

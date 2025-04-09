@@ -288,3 +288,22 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+.leetcode__progress {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f4f7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  background-color: #2ecc71;
+}
